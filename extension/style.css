@@ -1,0 +1,92 @@
+.darkdocs #docs-chrome,
+.darkdocs .docs-titlebar-buttons,
+.darkdocs #docs-toolbar-wrapper,
+.darkdocs .kix-page,
+.darkdocs .kix-page-content-wrapper,
+.darkdocs .docs-ui-unprintable,
+.darkdocs .navigation-widget{
+  background: #2b2b2b !important;
+}
+
+.darkdocs #docs-editor{
+  background: #555 !important; /* background to be synced with pdf viewer */
+}
+
+.darkdocs .goog-button-hover
+{
+  background: #1a1a1a !important;
+}
+
+.darkdocs .kix-page-paginated,
+.darkdocs .kix-paginateddocumentplugin-compact-mode
+{
+  box-shadow: 0 0 0 0.75pt #333 !important;
+}
+
+.darkdocs #docs-menubar
+{
+  color: white !important;
+}
+
+
+
+.darkdocs .docs-toolbar-wrapper,
+.darkdocs .goog-toolbar-separator,
+.darkdocs .docs-horizontal-ruler,
+.darkdocs #docs-toolbar-wrapper
+{
+  border-color: #333 !important;
+}
+
+.darkdocs .goog-toolbar-button,
+.darkdocs .docs-ruler-background-inner,
+.darkdocs .goog-toolbar-combo-button,
+.darkdocs .docs-navigation-tab-button,
+.darkdocs .goog-toolbar-menu-button,
+.darkdocs .docos-docoview-resolve-button,
+.darkdocs .docs-title-input
+{
+  background: #777 !important; /* button color */
+
+}
+
+.darkdocs .docs-title-input-label,
+.darkdocs .docs-title-input:focus,
+.darkdocs .kix-wordhtmlgenerator-word-node,
+.darkdocs .docs-menubar,
+.darkdocs .goog-inline-block,
+.darkdocs .goog-toolbar-combo-button-input,
+.darkdocs .goog-toolbar-button-inner-box,
+.darkdocs .goog-toolbar,
+.darkdocs .goog-toolbar-toggle-button,
+.darkdocs .docs-icon,
+.darkdocs .kix-lineview-text-block,
+.darkdocs .navigation-item .navigation-item-level-0, 
+.darkdocs .docos-anchoreddocoview .docos-replyview-first.docos-anchoredreplyview
+{
+  color: #ccc !important; /* special white text color */
+  border: none;
+}
+
+/* Text on the Share button at the top right of the screen */
+.darkdocs .docs-material #docs-titlebar-share-client-button .jfk-button {
+  color: #00008b !important;
+}
+
+/* Cursor */
+.darkdocs .kix-cursor-caret {
+  border-color: #fff !important;
+}
+
+/* text color in comment body */
+.darkdocs .docos-anchoredreplyview-body {
+	color: #ccc !important;
+}
+
+/* comment replies is a darker grey to distinguish them from the first comment in the thread */
+.darkdocs .docos-anchoredreplyview, .docos-showrepliesbutton,
+.darkdocs .docos-anchoreddocoview-input-pane {
+	background: #2b2b2b !important;
+	border-color: #2b2b2b !important;
+}
+

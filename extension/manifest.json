@@ -1,0 +1,28 @@
+{
+  "name": "Glatex Extension",
+  "version": "1.40",
+  "manifest_version": 2,
+  "description": "Compile LaTeX from Google Docs",
+  "background":{
+    "scripts":["background.js"],
+    "persistent":true
+  },
+  "browser_action":{
+    "default_title":"Open dark theme dialog",
+    "default_popup":"popup.html"
+  },
+  "permissions": [
+    "nativeMessaging", 
+    "https://docs.google.com/*"
+  ],
+  "icons" : {"128" : "logo_off.png"},
+  "content_scripts":[
+    {
+      "matches":[
+        "https://docs.google.com/*"
+      ],
+      "css" : ["style.css"],
+      "js":["content.js"]
+    }
+  ]
+}

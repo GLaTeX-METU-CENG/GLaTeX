@@ -1,0 +1,28 @@
+#!/bin/sh
+
+DIR="$( cd "$( dirname "$0" )" && pwd )"
+if [ "$(uname -s)" = "Darwin" ]; then
+  echo "Darwin"
+  if [ "$(whoami)" = "root" ]; then
+    SCRIPT_DIR="/Library/Google/Chrome/Default"
+    TARGET_DIR="/Library/Google/Chrome/NativeMessagingHosts"
+  else
+    SCRIPT_DIR="$HOME/Library/Application Support/Google/Chrome/Default"
+    TARGET_DIR="$HOME/Library/Application Support/Google/Chrome/NativeMessagingHosts"
+  fi
+else
+  echo "Linux"
+  if [ "$(whoami)" = "root" ]; then
+    SCRIPT_DIR="/etc/opt/chrome"
+    TARGET_DIR="/etc/opt/chrome/native-messaging-hosts"
+  else
+    SCRIPT_DIR="$HOME/.config/google-chrome/Default"
+    TARGET_DIR="$HOME/.config/google-chrome/NativeMessagingHosts"
+  fi
+fi
+
+COMP_DIR="$SCRIPT_DIR/GlatexCompiler"
+rm -rf "$COMP_DIR"
+HOST_NAME=com.glatex.compile
+rm "$TARGET_DIR/com.glatex.compile.json"
+echo "Native messaging host $HOST_NAME has been uninstalled."

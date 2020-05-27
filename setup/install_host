@@ -1,0 +1,105 @@
+#!/bin/sh
+
+set -e
+DIR="$( cd "$( dirname "$0" )" && pwd )"
+
+if [ "$(uname -s)" = "Darwin" ]; then
+  echo "Darwin"
+
+  if [ "$(whoami)" = "root" ]; then
+    SCRIPT_DIR="/Library/Google/Chrome/Default"
+    TARGET_DIR="/Library/Google/Chrome/NativeMessagingHosts"
+  else
+    SCRIPT_DIR="$HOME/Library/Application Support/Google/Chrome/Default"
+    TARGET_DIR="$HOME/Library/Application Support/Google/Chrome/NativeMessagingHosts"
+  fi
+  #BREW
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" < /dev/null
+  export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+  export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+  #PYTHON
+  yes | brew install python3
+  SITE_PATH="$( python3.7 -c 'import sysconfig; print(sysconfig.get_paths()["purelib"])' )"
+  #MACTEX
+  yes | brew cask install mactex
+  yes | python3.7 -m pip install --upgrade pip
+  yes | python3.7 -m pip install pyinstaller
+  yes | python3.7 -m pip install --upgrade 'setuptools<45.0.0'
+  #IMPORTS
+  yes | python3.7 -m pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+  yes | python3.7 -m pip install PyPDF2
+  yes | python3.7 -m pip install PySide2  
+  yes | python3.7 -m pip install httplib2 
+  yes | python3.7 -m pip install oauth2client 
+  yes | python3.7 -m pip install httpserver
+  yes | python3.7 -m pip install datetime 
+  #COMPILE PERMISSION
+  chmod 666 "$DIR/script.py"
+  #COMPILE PYTHON
+  COMP_DIR="$SCRIPT_DIR/GlatexCompiler"
+  mkdir -p "$COMP_DIR"
+  python3.7 -m PyInstaller -p "$SITE_PATH" --specpath "$COMP_DIR/spec" --distpath "$COMP_DIR/dist" --workpath "$COMP_DIR/build" -y "$DIR/script.py"
+  #EXECUTABLE PERMISSION
+  chmod 777 "$COMP_DIR/dist/script/script"
+  FILE="$SITE_PATH/PyInstaller/hooks/hook-googleapiclient.py"
+  if [[ -f "$FILE" ]]; then
+    echo "$FILE exist"
+  else
+    cp "$DIR/hooks/hook-googleapiclient.py" "$SITE_PATH/PyInstaller/hooks"
+  fi
+else
+  echo "Linux"
+  if [ "$(whoami)" = "root" ]; then
+    SCRIPT_DIR="/etc/opt/chrome"
+    TARGET_DIR="/etc/opt/chrome/native-messaging-hosts"
+  else
+    SCRIPT_DIR="$HOME/.config/google-chrome/Default"
+    TARGET_DIR="$HOME/.config/google-chrome/NativeMessagingHosts"
+  fi
+  #PYTHON
+  yes | sudo add-apt-repository ppa:deadsnakes/ppa
+  sudo apt-get update 
+  sudo apt --assume-yes install --upgrade python3.7 python3-pip 
+  sudo apt-get --assume-yes install python3.7-dev
+  SITE_PATH="$( python3.7 -m site --user-site )"
+  #TEX
+  sudo apt-get --assume-yes install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra #TEX
+  yes | python3.7 -m pip install --upgrade pip
+  yes | python3.7 -m pip install pyinstaller
+  yes | python3.7 -m pip install --upgrade 'setuptools<45.0.0'
+  #IMPORTS
+  yes | python3.7 -m pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+  yes | python3.7 -m pip install PyPDF2
+  yes | python3.7 -m pip install PySide2 
+  yes | python3.7 -m pip install httplib2 
+  yes | python3.7 -m pip install oauth2client 
+  yes | python3.7 -m pip install httpserver
+  yes | python3.7 -m pip install datetime 
+  #COMPILE PERMISSION
+  chmod 666 "$DIR/script.py"
+  #COMPILE PYTHON
+  COMP_DIR="$SCRIPT_DIR/GlatexCompiler"
+  mkdir -p "$COMP_DIR"
+  python3.7 -m PyInstaller -p "$SITE_PATH" --specpath "$COMP_DIR/spec" --distpath "$COMP_DIR/dist" --workpath "$COMP_DIR/build" -y "$DIR/script.py"
+  #EXECUTABLE PERMISSION
+  chmod 777 "$COMP_DIR/dist/script/script"
+  FILE="$SITE_PATH/PyInstaller/hooks/hook-googleapiclient.py"
+  if [ -f "$FILE" ]; then
+    echo "$FILE exist"
+  else
+    cp "$DIR/hooks/hook-googleapiclient.py" "$SITE_PATH/PyInstaller/hooks"
+  fi
+fi
+
+
+USER_PATH="$COMP_DIR/dist/script/user_data"
+mkdir -p "$USER_PATH"
+cp "$DIR/start_page.pdf" "$USER_PATH"
+HOST_NAME=com.glatex.compile
+mkdir -p "$TARGET_DIR"
+cp "$DIR/$HOST_NAME.json" "$TARGET_DIR"
+HOST_PATH=$COMP_DIR/dist/script/script
+sed -i -e "s@HOST_PATH@$HOST_PATH@" "$TARGET_DIR/$HOST_NAME.json"
+chmod o+r "$TARGET_DIR/$HOST_NAME.json"
+echo "Native messaging host $HOST_NAME has been installed."
+

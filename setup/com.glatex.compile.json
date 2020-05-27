@@ -1,0 +1,9 @@
+{
+	"allowed_origins":[
+		"chrome-extension://flbiiboegohonbaphidjfemmbeoknpjf/"
+	],
+	"description": "GLaTeX native messaging host",
+	"name": "com.glatex.compile",
+	"path": "HOST_PATH",
+	"type": "stdio"
+}

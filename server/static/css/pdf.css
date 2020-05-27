@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+#toolbar {
+  display: flex;
+  align-items: center;
+  background-color: #C0C0C0;
+  color: #fff;
+  padding: 0.5em;
+}
+
+#toolbar button {
+  color: currentColor;
+  background-color: transparent;
+  font: inherit;
+  border: 2px solid currentColor;
+  border-radius: 30px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  width: 30px;
+  height: : 30px;
+  outline: none;
+}
+
+#toolbar button:hover {
+  background-color: #A0A0A0;
+}
+
+#toolbar button:active {
+  background-color: #A0A0A0;
+  box-shadow: 0 1px #000000;
+  transform: translateY(1px);
+}
+
+#pdf {
+  filter: invert(0%);
+}
+
+#viewport-container {
+  flex: 1;
+  background: #F0F0F0;
+  overflow: auto;
+}
+#viewport {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#viewport > div {
+  text-align: center;
+  max-width: 100%;
+}
+#viewport canvas {
+  width: 100%;
+  box-shadow: 0 2px 5px gray;
+}
+/*dsadas*/
+
+
+
+.form-switch {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.form-switch i {
+  position: relative;
+  display: inline-block;
+  margin-right: .5rem;
+  width: 46px;
+  height: 26px;
+  background-color: #e6e6e6;
+  border-radius: 23px;
+  vertical-align: text-bottom;
+  transition: all 0.3s linear;
+}
+.form-switch i::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 42px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 11px;
+  transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
+  transition: all 0.25s linear;
+}
+.form-switch i::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+  transform: translate3d(2px, 2px, 0);
+  transition: all 0.2s ease-in-out;
+}
+.form-switch:active i::after {
+  width: 28px;
+  transform: translate3d(2px, 2px, 0);
+}
+.form-switch:active input:checked + i::after { transform: translate3d(16px, 2px, 0); }
+.form-switch input { display: none; }
+.form-switch input:checked + i { background-color: #000000; }
+.form-switch input:checked + i::before { transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0); }
+.form-switch input:checked + i::after { transform: translate3d(22px, 2px, 0); }
+
+
+.form-switch2 {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.form-switch2 i {
+  position: relative;
+  display: inline-block;
+  margin-right: .5rem;
+  width: 46px;
+  height: 26px;
+  background-color: #e6e6e6;
+  border-radius: 23px;
+  vertical-align: text-bottom;
+  transition: all 0.3s linear;
+}
+.form-switch2 i::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 42px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 11px;
+  transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
+  transition: all 0.25s linear;
+}
+.form-switch2 i::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+  transform: translate3d(2px, 2px, 0);
+  transition: all 0.2s ease-in-out;
+}
+.form-switch2:active i::after {
+  width: 28px;
+  transform: translate3d(2px, 2px, 0);
+}
+.form-switch2:active input:checked + i::after { transform: translate3d(16px, 2px, 0); }
+.form-switch2 input { display: none; }
+.form-switch2 input:checked + i { background-color: #4285F4; }
+.form-switch2 input:checked + i::before { transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0); }
+.form-switch2 input:checked + i::after { transform: translate3d(22px, 2px, 0); }
+
+
+.loader {
+  border-top: 4px solid #DB4437;
+  border-right: 4px solid #4285F4;
+  border-bottom: 4px solid #0F9D58;
+  border-left: 4px solid #F4B400;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
