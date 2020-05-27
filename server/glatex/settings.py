@@ -16,19 +16,16 @@ CWD = PROJECT_DIR + trailingSlash
 
 try:
     if os.environ['GLATEX_ENV'] == "prod":
-        DEBUG = True
-        GOOGLE_OAUTH2_CLIENT_SECRETS_JSON = PROJECT_DIR+trailingSlash+'glatex_app/production_client_secrets.json'
+        DEBUG = False
         VIEW_DOMAIN = 'http://www.glatex.xyz/'
     else:
         DEBUG = True
-        GOOGLE_OAUTH2_CLIENT_SECRETS_JSON = PROJECT_DIR+trailingSlash+'glatex_app/development_client_secrets.json'
         VIEW_DOMAIN = 'http://localhost:8000/'
 
 except Exception as e:
     print(e)
     DEBUG = True
     VIEW_DOMAIN = 'http://localhost:8000/'
-    GOOGLE_OAUTH2_CLIENT_SECRETS_JSON = PROJECT_DIR+trailingSlash+'glatex_app/development_client_secrets.json'
 
 SCOPES = ['https://www.googleapis.com/auth/drive','https://www.googleapis.com/auth/documents']
 
@@ -113,15 +110,6 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = PROJECT_DIR+trailingSlash+'static/'
-
-
-"""
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-    '/var/www/static/',
-    '/static/css/',
-]
-"""
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
