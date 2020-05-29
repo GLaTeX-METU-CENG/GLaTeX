@@ -29,8 +29,6 @@ except Exception as e:
 
 SCOPES = ['https://www.googleapis.com/auth/drive','https://www.googleapis.com/auth/documents']
 
-SECRET_KEY = 'e1zm6u@gk+ga)$y-9lkg^onn)dis84lpar=-7o)$rqltv#jo50'
-
 ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
