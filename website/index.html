@@ -1,0 +1,1144 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+	h1 {
+  display: inline-block;
+  color: white;
+  font-family: 'Righteous', serif;
+  font-size: 12em; 
+  text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
+  }
+  h1:after {
+    content: attr(data-shadow);
+    position: absolute;
+    top: .06em; left: .06em;
+    z-index: -1;
+    text-shadow: none;
+    background-image:
+      linear-gradient(
+        45deg,
+        transparent 45%,
+        hsla(48,20%,90%,1) 45%,
+        hsla(48,20%,90%,1) 55%,
+        transparent 0
+        );
+    background-size: .05em .05em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    animation: shad-anim 15s linear infinite;
+    }
+
+@keyframes shad-anim {
+  0% {background-position: 0 0}
+  0% {background-position: 100% -100%}
+  }
+</style>
+
+<head>
+    <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <title>GLaTeX - Edit LaTeX on GDocs</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+        
+    <!--====== Magnific Popup CSS ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        
+    <!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+        
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+        
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+   
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+    
+    <!--====== NAVBAR TWO PART START ======-->
+
+    <section class="navbar-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+                       
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/images/logo.png" alt="Logo">
+                        </a>
+                        
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo" aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item active"><a class="page-scroll" href="#home">home</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#services">Glatex</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#about">About</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#portfolio">Features</a></li>
+
+                                <li class="nav-item"><a class="page-scroll" href="#team">Team</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="navbar-btn d-none d-sm-inline-block">
+                            <ul>
+                                <li><a class="solid" href="https://gsuite.google.com/u/0/marketplace/app/glatex/1056589111276" target="_blank">Get Add-on</a></li>
+                                <li><a class="solid" href="https://chrome.google.com/webstore/detail/glatex-extension/flbiiboegohonbaphidjfemmbeoknpjf" target="_blank">Get Extension</a></li>
+                            </ul>
+                        </div>
+
+                    </nav> <!-- navbar -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== NAVBAR TWO PART ENDS ======-->
+    
+    <!--====== SLIDER PART START ======-->
+
+    <section id="home" class="slider_area">
+        <div id="carouselThree" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselThree" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselThree" data-slide-to="1"></li>
+                <li data-target="#carouselThree" data-slide-to="2"></li>
+                <li data-target="#carouselThree" data-slide-to="4"></li>
+                <li data-target="#carouselThree" data-slide-to="5"></li>
+                <li data-target="#carouselThree" data-slide-to="6"></li>
+                <li data-target="#carouselThree" data-slide-to="7"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title" style="font-size:5em">GLaTeX</h1>
+                                    <p class="text">G for Google and LaTeX for... well... LaTeX!</p>
+                                    <ul class="slider-btn rounded-buttons">
+                                        <li><a class="main-btn rounded-one" href="#services">LEARN MORE</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+                    <div class="slider-image-box d-none d-lg-flex align-items-center">
+                        <div class="slider-image">
+                            <img src="assets/images/logowhitetr.png" alt="Hero" >
+                        </div> <!-- slider-imgae -->
+                    </div> <!-- slider-imgae box -->
+                </div> <!-- carousel-item -->
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title" style="font-size:5em">Collaborative</h1>
+                                    <p class="text">Enjoy collaborative text editing of Google Docs!</p>
+                                    <ul class="slider-btn rounded-buttons">
+                                        <li><a class="main-btn rounded-one" href="#portfolio">LEARN MORE</a></li>
+                                    </ul>
+                                </div> <!-- slider-content -->
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+                    <div class="slider-image-box d-none d-lg-flex align-items-end">
+                        <div class="slider-image">
+                            <img src="assets/images/collabinverted.png" alt="Hero">
+                        </div> <!-- slider-imgae -->
+                    </div> <!-- slider-imgae box -->
+                </div> <!-- carousel-item -->
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title" style="font-size:5em">Independent</h1>
+                                    <p class="text">GLaTeX liberates you from network problems and platforms!</p>
+                                    <ul class="slider-btn rounded-buttons">
+                                        <li><a class="main-btn rounded-one" href="#portfolio">LEARN MORE</a></li>
+                                    </ul>
+                                </div> <!-- slider-content -->
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+                    <div class="slider-image-box d-none d-lg-flex align-items-center">
+                        <div class="slider-image">
+                            <img src="assets/images/indepinverted.png" alt="Hero">
+                        </div> <!-- slider-imgae -->
+                    </div> <!-- slider-imgae box -->
+                </div> <!-- carousel-item -->
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title" style="font-size:5em">Easy to Use</h1>
+                                    <p class="text">GLaTeX extends Google Docs so you already know how to use it!</p>
+                                    <ul class="slider-btn rounded-buttons">
+                                        <li><a class="main-btn rounded-one" href="#portfolio">LEARN MORE</a></li>
+                                    </ul>
+                                </div> <!-- slider-content -->
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+                    <div class="slider-image-box d-none d-lg-flex align-items-center">
+                        <div class="slider-image">
+                            <img src="assets/images/easyinverted.png" alt="Hero">
+                        </div> <!-- slider-imgae -->
+                    </div> <!-- slider-imgae box -->
+                </div> <!-- carousel-item -->
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title" style="font-size:5em">Free</h1>
+                                    <p class="text">GLaTeX is free and available on G Suite Marketplace! </p>
+                                    <ul class="slider-btn rounded-buttons">
+                                        <li><a class="main-btn rounded-one" href="#portfolio">LEARN MORE</a></li>
+                                    </ul>
+                                </div> <!-- slider-content -->
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+                    <div class="slider-image-box d-none d-lg-flex align-items-center">
+                        <div class="slider-image">
+                            <img src="assets/images/freenew.png" alt="Hero">
+                        </div> <!-- slider-imgae -->
+                    </div> <!-- slider-imgae box -->
+                </div> <!-- carousel-item -->
+
+
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title" style="font-size:5em">Open Source</h1>
+                                    <p class="text">GLaTeX is now an open source project!</p>
+                                    <ul class="slider-btn rounded-buttons">
+                                        <li><a class="main-btn rounded-one" href="#opensource">LEARN MORE</a></li>
+                                    </ul>
+                                </div> <!-- slider-content -->
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+                    <div class="slider-image-box d-none d-lg-flex align-items-center">
+                        <div class="slider-image">
+                            <img src="assets/images/opensource.png" alt="Hero">
+                        </div> <!-- slider-imgae -->
+                    </div> <!-- slider-imgae box -->
+                </div> <!-- carousel-item -->
+
+
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title" style="font-size:5em">Verified</h1>
+                                    <p class="text">GLaTeX is verified by Google for authentication!</p>
+                                    <ul class="slider-btn rounded-buttons">
+                                        <li><a class="main-btn rounded-one" href="#opensource">LEARN MORE</a></li>
+                                    </ul>
+                                </div> <!-- slider-content -->
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+                    <div class="slider-image-box d-none d-lg-flex align-items-center">
+                        <div class="slider-image">
+                            <img src="assets/images/verifiedinverted.png" alt="Hero">
+                        </div> <!-- slider-imgae -->
+                    </div> <!-- slider-imgae box -->
+                </div> <!-- carousel-item -->
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselThree" role="button" data-slide="prev">
+                <i class="lni lni-arrow-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#carouselThree" role="button" data-slide="next">
+                <i class="lni lni-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!--====== SLIDER PART ENDS ======-->
+    
+    <!--====== FEATRES TWO PART START ======-->
+
+    <section id="services" class="features-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-10">
+                        <h3 class="title">What is GLaTeX?</h3>
+                        <p class="text">GLaTeX is a Google Docs Add-on! It converts Google Docs into a LaTeX editor that can compile PDF files and offers a rich user experience with various functionalities. We offer a Google Docs Add-on and a Chrome Extension!</p>
+                    </div> <!-- row -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-7 col-sm-9">
+                    <div class="single-features mt-40">
+                        <div class="features-title-icon d-flex justify-content-between align-items-center">
+                            <h4 class="features-title"><a href="#">GLaTeX<br>Add-on</a></h4>
+                            <div class="features-icon">
+                                <img src="assets/images/gsuite.png">
+                            </div>
+                        </div>
+                        <div class="features-content">
+                            <p class="text">GLaTeX Add-on converts your Google Docs into a LaTeX editor! It colors content of your file for LaTeX syntax, creates a sidebar with your compiled PDF in it, offers a LaTeX symbol dictionary, and so much more!</p>
+                            <a class="features-btn" href="#about">LEARN MORE</a>
+                            <a class="features-btn" href="https://gsuite.google.com/u/0/marketplace/app/glatex/1056589111276" target="_blank" style="float: right;">GET</a>
+                        </div>
+                    </div> <!-- single features -->
+                </div>
+                <div class="col-lg-5 col-md-7 col-sm-9">
+                    <div class="single-features mt-40">
+                        <div class="features-title-icon d-flex justify-content-between align-items-center">
+                            <h4 class="features-title"><a href="#">GLaTeX<br>Extension</a></h4>
+                            <div class="features-icon">
+                                <img src="assets/images/chrome.png">
+                            </div>
+                        </div>
+                        <div class="features-content">
+                            <p class="text">GLaTeX Extension provides a richer and server-independent user experience! It adjusts the size of the sidebar with your compiled PDF, offers theme selection, and compiles PDF files locally on your computer!</p>
+                            <a class="features-btn" href="#about">LEARN MORE</a>
+                            <a class="features-btn" href="https://chrome.google.com/webstore/detail/glatex-extension/flbiiboegohonbaphidjfemmbeoknpjf" target="_blank" style="float: right;">GET</a>
+                        </div>
+                    </div> <!-- single features -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== FEATRES TWO PART ENDS ======-->
+
+
+
+
+    <!--====== TESTIMONIAL PART START ======-->
+
+    <section id="poster" class="testimonial-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 col-md-10">
+                    <div class="section-title text-center pb-10">
+                        <iframe width="720" height="480" src="https://www.youtube.com/embed/fw4C72gjMTM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        
+                    </div> 
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== TESTIMONIAL PART ENDS ======-->
+
+
+
+
+    <!--====== TESTIMONIAL PART START ======-->
+
+    <section id="opensource" class="features-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-10">
+                        <h3 class="title">GLaTeX is Open Source!</h3>
+                        <p class="text">Our vision is beyond our imagination! We know that the only way to exceed our own imagination is to collaborate with others and learn from them. That is why we made our project open source. We want to create a community to improve GLaTeX together! <a href="https://github.com/GLaTeX-METU-CENG/GLaTeX" target="_blank">GitHub link</a></p>
+                    </div> <!-- row -->
+                </div>
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-10">
+                        <h3 class="title">GLaTeX is verified!</h3>
+                        <p class="text">GLaTeX needs your permission to access your Google Docs files, Google Docs interface, and your Google Drive. But, do not worry! GLaTeX is verified by Google for authentication! We never use your data for any other purposes. <a href="#about">Privacy Policy</a></p></p>
+                    </div> <!-- row -->
+                </div>
+            </div>
+        </div> <!-- container -->
+    </section>
+
+    <!--====== TESTIMONIAL PART ENDS ======-->
+    
+    <!--====== ABOUT PART START ======-->
+
+    <section id="about" class="about-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="faq-content mt-45">
+                        <div class="about-title">
+                            <h6 class="sub-title">A Little More...</h6>
+                            <h4 class="title">About GLaTeX</h4>
+                        </div> <!-- faq title -->
+                        <div class="about-accordion">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">GLaTeX Add-on</a>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p class="text">GLaTeX Add-on is a Google Docs Add-on available on the G Suite Marketplace! It covers most of the main GLaTeX functionalities. Below, features provided by the GLaTeX Add-on are listed.
+                                            	<ol style="list-style-type: decimal; padding-left: 20px;">
+                                            		<li>
+                                            			Page setup for a LaTeX-editor-like text look.
+                                            		</li>
+                                            		<li>
+                                            			LaTeX syntax highlighting.
+                                            		</li>
+                                            		<li>
+                                            			LaTeX special symbols dictionary.
+                                            		</li>
+                                            		<li>
+                                            			Standard LaTeX environments dictionary.
+                                            		</li>
+                                            		<li>
+                                            			A sidebar containing compiled PDF file.
+                                            		</li>
+                                            		<li>
+                                            			GLaTeX PDF Viewer inside the sidebar which contains following functionalities implemented in buttons, keyboard-mouse shortcuts, and switches.
+                                            			<ol style="list-style-type: lower-roman; padding-left: 20px;">
+                                            				<li>
+                                            					Previous-next page buttons and keyboard shortcuts.
+                                            				</li>
+                                            				<li>
+                                            					Zoom out-in buttons and keyboard shortcuts.
+                                            				</li>
+                                            				<li>
+                                            					Compilation button and keyboard shortcut.
+                                            				</li>
+                                            				<li>
+                                            					Find in PDF button and keyboard shortcut.
+                                            				</li>
+                                            				<li>
+                                            					Find in TeX keyboard-mouse combination shortcut.
+                                            				</li>
+                                            				<li>
+                                            					Download PDF button and keyboard shortcut.
+                                            				</li>
+                                            				<li>
+                                            					Server-local compilation switch.
+                                            				</li>
+                                            				<li>
+                                            					Help button.
+                                            				</li>
+                                            				<li>
+                                            					Information boxes triggered on mouse hovers for each item in the PDF viewer.
+                                            				</li>
+                                            			</ol>
+                                            		</li>
+                                            	</ol>
+                                            	GLaTeX Add-on is implemented with Google Apps Script (a variation of Javascript adapted for extending Google services), HTML, and Javascript. Google Apps Script codes are executed on Google servers and HTML-Javascript codes are executed on the browsers. Communication between these two components is ensured by special Google API function calls.
+                                            </p>
+                                        </div>
+                                    </div> 
+                                </div> <!-- card -->
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">GLaTeX Extension</a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p class="text">GLaTeX Extension is Google Chrome Extension available on the Chrome Web Store! It assists GLaTeX Add-on to achieve several essential features of the GLaTeX. These features provided by the GLaTeX Extension are listed.
+                                            	<ol style="list-style-type: decimal; padding-left: 20px;">
+                                            		<li>
+                                            			Increases the size of the sidebar containing compiled PDF file.
+                                            		</li>
+                                            		<li>
+                                            			Enables local compilation.
+                                            		</li>
+                                            		<li>
+                                            			Offers light and dark themes for Google Docs. 
+                                            		</li>
+                                            	</ol>
+                                            	GLaTeX Extension is implemented with HTML, Javascript, Python, and Bash. HTML-Javascript is used for the browser interface of the extension and for the dark theme. Python is used for enabling a local server on the user machine. This local server receives requests from GLaTeX Add-on and serves for all functionalities just like GLaTeX server. Bash is used in the installation script of the local server. The installation script installs all requirements, compile the local server implementation, and takes care of all adjustments for execution of the local server.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> <!-- card -->
+                                <div class="card">
+                                    <div class="card-header" id="headingFive">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">How to use GLaTeX?</a>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p class="text">It is extremely easy to use GLaTeX. Actually, you already know how to use it!
+                                            	<ol style="list-style-type: decimal; padding-left: 20px;">
+                                            		<li>
+                                            			Download GLaTeX Add-on from the G Suite Marketplace.
+                                            		</li>
+                                            		<li>
+                                            			Download GLaTeX Extension from the Chrome Web Store.
+                                            		</li>
+                                            		<li>
+                                            			Open a Google Docs file and press Add-ons -> GLaTeX -> Start GLaTeX.
+                                            		</li>
+                                            		<li>
+                                            			Well... there is no other step actually. Just enjoy GLaTeX!
+                                            		</li>
+                                            	</ol>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> <!-- card -->
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Privacy Policy</a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            
+                                            <p class="text">GLaTeX is a non-profit project. We are very strict on our privacy policy and never use user data for any other purposes.
+                                            	<ol style="list-style-type: decimal; padding-left: 20px;">
+													<li>GLaTeX does not sell in-app products nor advertise to its users.</li>
+													<li>GLaTeX is completely and will always be free.</li>
+													<li>GLaTeX does not collect nor store any personal information permanently about the user, his/her Google Documents, or his/her Google Drive. Any data that is downloaded to the server for server-side compilation is deleted once a week.</li>
+													<li>GLaTeX does not communicate with the user unless he/she has submitted an issue.</li>
+												</ol>
+												Source code of GLaTeX will be shared on GitHub and it will be publicly available in June 2020.
+											</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- card -->
+                                <div class="card">
+                                    <div class="card-header" id="headingFore">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseFore" aria-expanded="false" aria-controls="collapseFore">Terms of Service</a>
+                                    </div>
+                                    <div id="collapseFore" class="collapse" aria-labelledby="headingFore" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p class="text">GLaTeX is a free GoogleDocs Add-on. It was created by four senior computer engineering students from the Middle East Technical University, Ankara, Turkey.
+                                            	<ol style="list-style-type: decimal; padding-left: 20px;">
+													<li>GLaTeX is offered as a free tool. Developers are senior computer engineering students; however, we plan to continue supporting the tool after our graduation. Please keep your requests as specific as possible.</li>
+													<li>Reporting through the help button in the sidebar is the best way to request technical support.</li>
+													<li>The tool requires three authorization scopes to operate in full capacity.
+														<ol style="list-style-type: lower-roman; padding-left: 20px;">
+															<li>
+																Read Only permission for user’s drive files: This is essential for the compilation of LaTeX files. If the Google Docs file is contained in the “My Drive” folder of the user, then only content of the current file is downloaded for compilation. If the Google Docs file is contained in a folder that is created by the user, then the whole folder is downloaded for compilation with images and/or other LateX files.
+															</li>
+															<li>
+																Documents permission: This is essential for page setup for proper font size and type, syntax highlighting, position matching between the TeX source and the compiled pdf, inserting special LaTeX symbols requested by the user, and inserting LaTeX environments requested by the user.
+															</li>
+															<li>
+																Script Container UI permission: This is essential for creating a sidebar containing compiled PDF files.
+															</li>
+														</ol>
+													</li>
+													<li>Users can also use GLaTeX Chrome Extension (link) for resizing the sidebar, theme selection, and local compilation. When local compilation is enabled, user data is not transferred to our server, i.e., user data is kept in the user’s local machine. If the user prefers server compilation, then we keep user data for only a week and then delete. </li>
+													<li>Under any condition, user data is not shared with anyone.</li>
+													<li>Under any condition, we do not use user data for any other purpose than compilation.</li>
+													<li>Any user data downloaded to the server for compilation purposes is deleted once a week and never used unless the user presses the compilation button.</li>
+													<li>No guarantee is made for the maintenance and reliability of the service.</li>
+												</ol>
+											</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- card -->
+                            </div>
+                        </div> <!-- faq accordion -->
+                    </div> <!-- faq content -->
+                </div>
+                <div class="col-lg-5">
+                    <div class="about-image mt-10">
+                        <img src="assets/images/poster.jpeg" alt="about">
+                    </div> <!-- faq image -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== ABOUT PART ENDS ======-->
+    
+    <!--====== PORTFOLIO PART START ======-->
+
+    <section id="portfolio" class="portfolio-area portfolio-four pb-100">
+        <div class="container portfolio-container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-10">
+                        <h3 class="title">Features</h3>
+                        <p class="text">GLaTeX offers a rich set of features!<br>Let's explore them!</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row portfolio-row">
+                <div class="col-lg-3 col-md-2">
+                    <div class="portfolio-menu text-center mt-50">
+                        <ul>
+                            <li data-filter=".google_based" class="active">GOOGLE-BASED</li>
+                            <li data-filter=".latex_editor">LATEX EDITOR</li>
+                            <li data-filter=".gdocs">GDOCS FEATURES</li>
+                            <li data-filter=".easy">EASY TO USE</li>
+                            <li data-filter=".match">TEX-PDF MATCHING</li>
+                            <li data-filter=".local_comp">LOCAL COMPILATION</li>
+                            <li data-filter=".offline">OFFLINE EDITING</li>
+                            <li data-filter=".theme">LIGHT-DARK THEMES</li>
+                            <li data-filter=".dict">LATEX DICTIONARIES</li>
+                            <li data-filter=".syntax">SYNTAX HIGHLIGHTING</li>
+                            <li data-filter=".folder">MULTIPLE FILE COMPILATION</li>
+                            <li data-filter=".commandline">COMMAND-LINE TOOL</li>
+                        </ul>
+                    </div> <!-- portfolio menu -->
+                </div>
+                <div class="col-lg-9 col-md-6">
+                    <div class="row no-gutters grid mt-50">
+                        <div class="col-lg-12 col-sm-9 google_based">
+                            <div class="single-portfolio">
+                                <video class="portfolio-video" autoplay muted loop>
+                                    <source src="assets/videos/googlebased.mov" type="video/mp4">
+                                </video>
+                                <br>
+                                <br>
+                                <div class="portfolio-image">
+                                	<h1 style="font-size: 1.4em; text-align: center;">GLaTeX is Google-based so it is just like using a Google tool! GLaTeX Add-on is a Google Docs Add-on that can be enabled from the G Suite Marketplace. GLaTeX Extension is a Chrome Extension that can be loaded from the Chrome Web Store. Both are verified by Google and integrated with your current Google environment super easily!</h1>
+                                </div>
+                            </div> <!-- single portfolio -->
+                        </div>
+                        <div class="col-lg-12 col-sm-9 latex_editor">
+                            <div class="single-portfolio">
+                                <video class="portfolio-video" autoplay muted loop>
+                                    <source src="assets/videos/latexeditor.m4v" type="video/mp4">
+                                </video>
+                                <br>
+                                <br>
+                                <div class="portfolio-image">
+                                    <h1 style="font-size: 1.4em; text-align: center;">GLaTeX converts your Google Docs environment into a LaTeX editor! Thanks the GLaTeX Add-on, a sidebar containing GLaTeX PDF Viewer with your compiled PDF is created on your Google Docs interface and thanks to GLaTeX Extension, size of this sidebar is adjusted for you!</h1>
+                                </div>
+                            </div> <!-- single portfolio -->
+                        </div>
+                        <div class="col-lg-12 col-sm-9 gdocs">
+                            <div class="single-portfolio">
+                                <video class="portfolio-video" autoplay muted loop>
+                                    <source src="assets/videos/gdocsfeatures.m4v" type="video/mp4">
+                                </video>
+                                <br>
+                                <br>
+                                <div class="portfolio-image">
+                                    <h1 style="font-size: 1.4em; text-align: center;">GLaTeX never limits your Google Docs experience! You can use all the functionalities of Google Docs! We are only here to help!</h1>
+                                </div>
+                            </div> <!-- single portfolio -->
+                        </div>
+                        <div class="col-lg-12 col-sm-9 easy">
+                            <div class="single-portfolio">
+                                <video class="portfolio-video" autoplay muted loop>
+                                    <source src="assets/videos/easytouse.m4v" type="video/mp4">
+                                </video>
+                                <br>
+                                <br>
+                                <div class="portfolio-image">
+                                    <h1 style="font-size: 1.4em; text-align: center;">It is super easy to use GlaTeX and you already know how to use it! You basically use Google Docs and start GLaTeX on the right side of the page. If you do not know what buttons of the GLaTeX PDF Viewer do just position your mouse on them and a help box will appear. GLaTeX will always be helping you and making things easier for you!</h1>
+                                </div>
+                            </div> <!-- single portfolio -->
+                        </div>
+                        <div class="col-lg-12 col-sm-9 match">
+                            <div class="single-portfolio">
+                                <video class="portfolio-video" autoplay muted loop>
+                                    <source src="assets/videos/latexpdfmatching.mov" type="video/mp4">
+                                </video>
+                                <br>
+                                <br>
+                                <div class="portfolio-image">
+                                    <h1 style="font-size: 1.4em; text-align: center;">Just one of the cool functionalities of GLaTeX is the spatial matching feature! If you want to learn the corresponding TeX position of a PDF position, just shift+click that position and GLaTeX will show you the corresponding position on Google Docs file! If you want to learn the corresponding PDF position of a TeX position, just place your cursor on that line and press the find button on the GLaTeX PDF Viewer (or just control+f) and GLaTeX will show you the corresponding position on the Google Docs file!</h1>
+                                </div>
+                            </div> <!-- single portfolio -->
+                        </div>
+                        <div class="col-lg-12 col-sm-9 local_comp">
+                            <div class="single-portfolio">
+                                <video class="portfolio-video" autoplay muted loop>
+                                    <source src="assets/videos/localcompile.m4v" type="video/mp4">
+                                </video>
+                                <br>
+                                <br>
+                                <div class="portfolio-image">
+                                    <h1 style="font-size: 1.4em; text-align: center;">Here is the coolest part: thanks to GLaTeX Extension, you can compile your LaTeX source on your local machine! You are independent and do not need to rely on our servers! This speeds up the compilation process and increases the security significantly. On top of local compilation, once you switch to local compilation settings, every functionality of GLaTeX is operated locally! So, you really are independent!</h1>
+                                </div>
+                            </div> <!-- single portfolio -->
+                        </div>
+                        <div class="col-lg-12 col-sm-9 offline">
+                            <div class="single-portfolio">
+                                <video class="portfolio-video" autoplay muted loop>
+                                    <source src="assets/videos/offline.m4v" type="video/mp4">
+                                </video>
+                                <br>
+                                <br>
+                                <div class="portfolio-image">
+                                    <h1 style="font-size: 1.4em; text-align: center;">If you make your document offline available, you can always continue editing offline! Unfortunately, you cannot compile your LaTeX sources offline. But, you can always view and download your latest locally compiled PDF!</h1>
+                                </div>
+                            </div> <!-- single portfolio -->
+                        </div>
+                        <div class="col-lg-12 col-sm-9 theme">
+                            <div class="single-portfolio">
+                                <video class="portfolio-video" autoplay muted loop>
+                                    <source src="assets/videos/darkmode.m4v" type="video/mp4">
+                                </video>
+                                <br>
+                                <br>
+                                <div class="portfolio-image">
+                                    <h1 style="font-size: 1.4em; text-align: center;">Nobody likes to pull an all-nighter but it is inevitable. GLaTeX Extension offers a dark theme for your Google Docs interface. Come on and switch to dark mode for those inevitable all-nighters!</h1>
+                                </div>
+                            </div> <!-- single portfolio -->
+                        </div>
+                        <div class="col-lg-12 col-sm-9 dict">
+                            <div class="single-portfolio">
+                                <video class="portfolio-video" autoplay muted loop>
+                                    <source src="assets/videos/latexdictionary.m4v" type="video/mp4">
+                                </video>
+                                <br>
+                                <br>
+                                <div class="portfolio-image">
+                                    <h1 style="font-size: 1.4em; text-align: center;">We all like LaTeX, right? Well, at least we like it! But it is sometimes hard to remember keywords for all those special symbols and environments. GLaTeX provides a symbol dictionary and an environment dictionary for you! Now, you can focus on your work rather than searching for LaTeX keywords!</h1>
+                                </div>
+                            </div> <!-- single portfolio -->
+                        </div>
+                        <div class="col-lg-12 col-sm-9 syntax">
+                            <div class="single-portfolio">
+                                <video class="portfolio-video" autoplay muted loop>
+                                    <source src="assets/videos/syntax.mov" type="video/mp4">
+                                </video>
+                                <br>
+                                <br>
+                                <div class="portfolio-image">
+                                    <h1 style="font-size: 1.4em; text-align: center;">Whenever you feel overwhelmed by the huge amount of boring text in front of you, click color syntax! We promise things will get easier and more fun once we color the syntax for you!</h1>
+                                </div>
+                            </div> <!-- single portfolio -->
+                        </div>
+                        <div class="col-lg-12 col-sm-9 folder">
+                            <div class="single-portfolio">
+                                <video class="portfolio-video" autoplay muted loop>
+                                    <source src="assets/videos/include.m4v" type="video/mp4">
+                                </video>
+                                <br>
+                                <br>
+                                <div class="portfolio-image">
+                                    <h1 style="font-size: 1.4em; text-align: center;">Include images and other TeX sources from your document! You are not bound to work only on a single document. You can use multiple TeX sources and compile them all from a main TeX file! You can also include any image in your TeX file! Just place these files (or the folders containing these files) and your main TeX file in the same folder in your Drive. GLaTeX recursively includes these files for you!</h1>
+                                </div>
+                            </div> <!-- single portfolio -->
+                        </div>
+                        <div class="col-lg-12 col-sm-9 commandline">
+                            <div class="single-portfolio">
+                                <video class="portfolio-video" autoplay muted loop>
+                                    <source src="assets/videos/commandline.m4v" type="video/mp4">
+                                </video>
+                                <br>
+                                <br>
+                                <div class="portfolio-image">
+                                    <h1 style="font-size: 1.4em; text-align: center;">GLaTeX also offers a command-line tool! Download from <a href="assets/glatex.zip">here</a>. Just type "python glatex.py -h" and you will see instructions to use it!</h1>
+                                </div>
+                            </div> <!-- single portfolio -->
+                        </div>
+                    </div> <!-- row -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== PORTFOLIO PART ENDS ======-->
+
+
+    <!--====== CONTACT PART START ======-->
+
+    <section id="instructions" class="contact-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="faq-content mt-45">
+                        <div class="about-title">
+                            <h4 class="title">Instructions for GLaTeX Usage</h4>
+                        </div> <!-- faq title -->
+
+                        <br />
+                        <div class="about-accordion">
+                            <div class="accordion" id="accordionExample2">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne2">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">GLaTeX Add-on</a>
+                                    </div>
+
+                                    <div id="collapseOne2" class="collapse" aria-labelledby="headingOne2" data-parent="#accordionExample2">
+                                        <div class="card-body">
+                                            <h3 class="text">Add-on</h3>
+                                            <br>
+                                            <p class="text">In order to use the GLaTeX Add-on, you have to;</p>
+                                            <ol style="list-style-type: decimal; padding-left: 20px;">
+                                            <li>Open a <strong>Google Docs</strong> document</li>
+                                            <li>If you have not already got GLaTeX Add-on from GSuite Marketplace, please get it by clicking <br/> <strong>Add-ons>Get Add-ons</strong> </li>
+                                            <li>Click <strong>Add-ons>GLaTeX>Start GLaTeX</strong> so that it opens up the PDF viewer&nbsp;</li>
+                                            </ol>
+                                            <br/>
+
+                                            <p class="text">Now you have successfully added the add-on to your document.</p>
+
+
+                                        </div>
+                                    </div> 
+                                </div> <!-- card -->
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo2">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">GLaTeX Extension</a>
+                                    </div>
+                                    <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2" data-parent="#accordionExample2">
+                                        <div class="card-body">
+                                            <h3 class="text">Extension</h3>
+                                                <br>
+                                            <p class="text">
+                                                To be able to have the full functionality, please make sure you have added <strong>GLaTeX Extension</strong> to your Google Chrome.
+                                            </p>
+                                                <ol style="list-style-type: decimal; padding-left: 20px;">
+                                                    <li>Click the following <a href="https://chrome.google.com/webstore/detail/glatex-extension/flbiiboegohonbaphidjfemmbeoknpjf" target="_blank">link</a></li>
+                                                    <li>Click on <strong>Add to Chrome</strong></li>
+                                                </ol>
+                                                <br/>
+
+                                                <p>Now the extension is added to your Google Chrome. The only interactive functionality provided by the extension is <strong>Dark mode</strong>. When you click on the extension button from Google Chrome, you can see a <strong>switch</strong> indicating the "Dark mode" which you can use to <strong>enable/disable</strong> dark mode on your Google Docs document. <br /><br /><strong>Important notice</strong>: In order to use GLaTeX you also have to get the GLaTeX Add-on.</p>
+                                                <br />
+                                                <h3 class="text">Local Compilation</h3>
+                                                <br>
+                                                <p class="text">In order to be able to use the local compilation feature of GLaTeX, there is one more step that is needed to be done: <strong>running a script</strong> that connects a <strong>local server</strong> to the GLaTeX Extension, so that you will be able to get full functionality even when you are offline.</p>
+                                                <br/>
+
+                                                <p class="text">The steps you must follow;</p>
+                                                <ol style="list-style-type: decimal; padding-left: 20px;">
+                                                <li>Download the <strong>setup folder</strong> zip file that includes the mentioned script from <a href="assets/setup.zip">here</a></li>
+                                                <li>Extract the content of the zip file to <strong>any directory</strong> in your local filesystem&nbsp;</li>
+                                                <li>There will be a script named<strong> install_host</strong>, change its <strong>permissions</strong> so you can <strong>execute</strong> the script (ie. it is executable)</li>
+                                                <li>Execute the script by <strong>double clicking</strong> (may not be available on linux) or running from the <strong>terminal</strong> (by opening a terminal in the same directory and calling the command <strong>"./install_host"</strong>)</li>
+                                                <li><strong>Wait</strong> for the install_host script to finish its <strong>execution</strong> (This might take a while do not worry)</li>
+                                                <li>After it is finished, you can <strong>check</strong> the availability of the <strong>local server</strong> from the add-on sidebar's top-right <strong>local compilation switch</strong> (if the local server is available it will switch to be enabled and disabled if otherwise)</li>
+                                                </ol>
+                                                <br/>
+                                                <p>Now you have the offline features as well as the online ones. The offline usage is <strong>identical</strong> to the online one in the sense that you both have <strong>all the capabilities</strong> GLaTeX offers and they are accessed the same way. The only difference is that now you have your own local server and you are independent of our back-end server.&nbsp;&nbsp;</p>
+                                                <br/>
+                                                <h3 class="text">Errors</h3>
+                                                <br>
+                                                <p>Although we provide a robust system that ensures full functionality, there might be <strong>unprecedented errors</strong>.</p> 
+                                                <br/>
+                                                <p>Generally when you encounter a problem;</p>
+                                                <ol style="list-style-type: circle; padding-left: 20px;">
+                                                    <li>Make sure you are using Google Chrome's latest version and have followed the exact procedure defined in the instructions</li>
+                                                </ol>
+                                                <p>or</p>
+                                                <ol style="list-style-type: circle; padding-left: 20px;">
+                                                    <li>Close and restart Google Chrome, disable and re-enable the extension from "Chrome Extension", and reload the Google Docs page </li>
+                                                </ol>
+                                                <p>or</p>
+                                                <ol style="list-style-type: circle; padding-left: 20px;">
+                                                    <li>Try removing all of the components (extension, add-on, script) and start over from the beginning</li>
+                                                </ol>
+                                                <br>
+                                                <h5 class="text">Local Compilation Errors</h5>
+                                                <br>
+                                                <p>In order to bypass the errors and continue using GLaTeX locally;</p>
+                                                <ol style="list-style-type: circle; padding-left: 20px;">
+                                                    <li>Try to run the <strong>script.py</strong> inside the <a href="assets/setup.zip" target="_blank">Setup folder</a> that you have downloaded earlier, with python3.7</li>
+                                                </ol>
+                                                <p>or</p>
+                                                <ol style="list-style-type: circle; padding-left: 20px;">
+                                                    <li>Try <a href="assets/glatex.zip" target="_blank">GLaTeX Command-Line Tool</a>.</li>
+                                        </div>
+                                    </div>
+                                </div> <!-- card -->
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo2">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">GLaTeX Command-Line Tool</a>
+                                    </div>
+                                    <div id="collapseThree2" class="collapse" aria-labelledby="headingTwo2" data-parent="#accordionExample2">
+                                        <div class="card-body">
+                                            <h3 class="text">Command-Line Tool</h3>
+                                                <br>
+                                            <p class="text">
+                                                You can also use <a href="assets/glatex.zip" target="_blank">GLaTeX Command-Line Tool</a>! To create a client_secret.json, follow steps below or just use this <a class="solid" href="https://developers.google.com/drive/api/v3/quickstart/python" target="_blank">link</a> as a shortcut.
+                                            </p>
+                                                <ol style="list-style-type: decimal; padding-left: 20px;">
+                                                    <li>
+                                                    Go to <a class="solid" href="https://console.cloud.google.com" target="_blank">https://console.cloud.google.com</a>
+                                                    </li>
+                                                    <li>
+                                                    Create a new project
+                                                    </li>
+                                                    <li>
+                                                    Wait for this project to be created
+                                                    </li>
+                                                    <li>
+                                                    Click "VIEW" on the notification sidebar after project is created
+                                                    </li>
+                                                    <li>
+                                                    Go to <a class="solid" href="https://console.cloud.google.com/apis" target="_blank">https://console.cloud.google.com/apis</a>
+                                                    </li>
+                                                    <li>
+                                                    Click "OAuth consent screen" on the left, check "External" and click "CREATE"
+                                                    </li>
+                                                    <li>
+                                                    Enter an application name
+                                                    </li>
+                                                    <li>
+                                                    Add "<a class="solid" href="https://www.googleapis.com/auth/drive.readonly" target="_blank">https://www.googleapis.com/auth/drive.readonly</a>" to scopes manually
+                                                    </li>
+                                                    <li>
+                                                    Click Save
+                                                    </li>
+                                                    <li>
+                                                    Click "Credentials" on the left
+                                                    </li>
+                                                    <li>
+                                                    Click "Create Credentials -> OAuth client ID"
+                                                    </li>
+                                                    <li>
+                                                    Set application type as "Desktop App", enter a name, and click "CREATE"
+                                                    </li>
+                                                    <li>
+                                                    Click download icon under the corresponding entering of "OAuth 2.0 Client IDs"
+                                                    </li>
+                                                    <li>
+                                                    Enter "Google Drive API" to the search bar on top and click the first entery
+                                                    </li>
+                                                    <li>
+                                                    Click "ENABLE"
+                                                    </li>
+                                                    <li>
+                                                    Wait a few minutes for these action to propagate in Google systems
+                                                    </li>
+                                                </ol>
+                                        </div>
+                                    </div>
+                                </div> <!-- card -->
+                            </div>
+                        </div> <!-- faq accordion -->
+                    </div> <!-- faq content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== CONTACT PART ENDS ======-->
+    
+
+    <!--====== TEAM START ======-->
+
+    <section id="team" class="team-area pt-120 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-30">
+                        <h3 class="title">GLaTeX Team</h3>
+                        <p class="text">Let's meet with the team!</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg col-sm">
+                    <div class="team-style-eleven text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                        <div class="team-image">
+                            <img src="assets/images/sina.jpg" alt="Team">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-social">
+                                <ul class="social">
+                                    <li><a href="mailto:sinasehlaver@gmail.com"><i class="lni lni-envelope"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/sinasehlaver/" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
+                                </ul>
+                            </div>
+                            <h4 class="team-name"><a href="#">Sina Şehlaver</a></h4>
+                            <span class="sub-title">Developer</span>
+                        </div>
+                    </div> <!-- single team -->
+                </div>
+                <div class="col-lg col-sm">
+                    <div class="team-style-eleven text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                        <div class="team-image">
+                            <img src="assets/images/beyazit.jpg" alt="Team">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-social">
+                                <ul class="social">
+                                    <li><a href="mailto:beyazit.yalcinkaya@gmail.com"><i class="lni lni-envelope"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/beyazityalcinkaya/" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
+                                </ul>
+                            </div>
+                            <h4 class="team-name"><a href="#">Beyazıt Yalçınkaya</a></h4>
+                            <span class="sub-title">Developer</span>
+                        </div>
+                    </div> <!-- single team -->
+                </div>
+                <div class="col-lg col-sm">
+                    <div class="team-style-eleven text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                        <div class="team-image">
+                            <img src="assets/images/sena.jpg" alt="Team">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-social">
+                                <ul class="social">
+                                    <li><a href="mailto:senaterzi2@gmail.com"><i class="lni lni-envelope"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/sena-terzi-15355b90/" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
+                                </ul>
+                            </div>
+                            <h4 class="team-name"><a href="#">Sena Terzi</a></h4>
+                            <span class="sub-title">Developer</span>
+                        </div>
+                    </div> <!-- single team -->
+                </div>
+                <div class="col-lg col-sm">
+                    <div class="team-style-eleven text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                        <div class="team-image">
+                            <img src="assets/images/ercem.jpg" alt="Team">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-social">
+                                <ul class="social">
+                                    <li><a href="mailto:ercembulut@gmail.com"><i class="lni lni-envelope"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/ercembulut" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
+                                </ul>
+                            </div>
+                            <h4 class="team-name"><a href="#">Ahmet Ercem Bulut</a></h4>
+                            <span class="sub-title"></span>
+                        </div>
+                    </div> <!-- single team -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== TEAM  ENDS ======-->
+    
+
+    
+
+
+    <!--====== FOOTER PART START ======-->
+
+    <section id="contact" class="footer-area footer-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="footer-logo text-center">
+                        <a class="mt-30" href="index.html"><img src="assets/images/logo_new.png" alt="Logo" ></a>
+                    </div> <!-- footer logo -->
+                    <div class="footer-support text-center">
+                        <span class="text">GLaTeX 2020</span>
+                    </div>
+					<div class="footer-support text-center">
+                        <span class="text">All Rights Reserved</span>
+                    </div>
+
+                    <div class="footer-support text-center">
+                        <span class="mail">glatex22@gmail.com</span>
+                    </div>
+                   <div class="copyright text-center mt-35">
+                        <p class="text">Built with <a href="https://uideck.com" rel="nofollow">UIdeck</a></p><p class="text"><a href="https://iconscout.com/icons/no-connection" target="_blank">No Connection Icon</a> by <a href="https://iconscout.com/contributors/unicons" target="_blank">Unicons Font</a></p>
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== FOOTER PART ENDS ======-->
+    
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->    
+
+    <!--====== PART START ======-->
+
+<!--
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+
+    <!--====== PART ENDS ======-->
+
+
+
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <!--====== Slick js ======-->
+    <script src="assets/js/slick.min.js"></script>
+    
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    
+    <!--====== Ajax Contact js ======-->
+    <script src="assets/js/ajax-contact.js"></script>
+    
+    <!--====== Isotope js ======-->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+    
+</body>
+
+</html>
